@@ -9,14 +9,5 @@ terraform {
 
 provider "azurerm" {
   features {}
-  # Configuration options
-  subscription_id = var.subscription_id
-
-  # Optional: Specify the tenant ID if you have multiple tenants
-  tenant_id       = var.tenant_id
-  # Optional: Specify the client ID and client secret for service principal authentication
-  client_id       = var.client_id
-  client_secret   = var.client_secret
-
 
 }
