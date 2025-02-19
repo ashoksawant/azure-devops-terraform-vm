@@ -33,3 +33,7 @@ variable "vm_pass" {
   sensitive = true
 
 }
+variable "publicip" {
+  default = "public_ip_vm1"
+  
+}
