@@ -35,3 +35,8 @@ variable "nicname" {
 variable "vmname" {
   default = "vm1"
 }
+variable "vm_pass" {
+  type = string
+  sensitive = true
+  
+}
