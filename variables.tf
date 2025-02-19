@@ -1,20 +1,20 @@
-variable "subscription_id" { 
+variable "subscription_id" {
 }
-variable "client_id" { 
+variable "client_id" {
 }
 variable "tenant_id" {
 }
-variable "client_secret" { 
+variable "client_secret" {
 }
 
 variable "storage_account_name" {
-  
+
 }
 variable "container-name" {
-  
+
 }
 variable "resource_group-name" {
-  
+
 }
 
 variable "virtual_network-name" {
