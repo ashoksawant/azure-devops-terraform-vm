@@ -1,13 +1,13 @@
-variable "subscription_id" {
+variable "subscription-id" {
   type        = string
 }
-variable "client_id" {
+variable "client-id" {
   type        = string
 }
-variable "tenant_id" {
+variable "tenant-id" {
   type        = string
 }
-variable "client_secret" {
+variable "client-secret" {
   type        = string
   sensitive   = true
 }
