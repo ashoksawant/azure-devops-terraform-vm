@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name   = var.resource_group-name
-    storage_account_name  = var.storage_account-name
-    container_name        = var.container-name
+    resource_group_name   = "1-434cb672-playground-sandbox"
+    storage_account_name  = "azuredevopslabstrg"
+    container_name        = "container1"
     key                   = "terraform.tfstate"
   }
 }

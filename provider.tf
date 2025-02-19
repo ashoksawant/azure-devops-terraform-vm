@@ -16,5 +16,6 @@ provider "azurerm" {
   # Optional: Specify the client ID and client secret for service principal authentication
   client_id       = var.client_id
   client_secret   = var.client_secret
-  
+
+
 }
