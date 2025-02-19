@@ -1,23 +1,23 @@
 data "azurerm_resource_group" "example" {
-  name = var.resource_group-name
+  name = var.resource_group_name
 }
 
 resource "azurerm_virtual_network" "example" {
-  name                = var.virtual_network-name
+  name                = var.virtual_networkname
   address_space       = ["10.0.0.0/16"]
   location            = data.azurerm_resource_group.example.location
   resource_group_name = data.azurerm_resource_group.example.name
 }
 
 resource "azurerm_subnet" "example" {
-  name                 = var.subnet-name
+  name                 = var.subnetname
   resource_group_name  = data.azurerm_resource_group.example.name
   virtual_network_name = azurerm_virtual_network.example.name
   address_prefixes     = ["10.0.2.0/24"]
 }
 
 resource "azurerm_network_interface" "example" {
-  name                = var.nic-name
+  name                = var.nicname
   location            = data.azurerm_resource_group.example.location
   resource_group_name = data.azurerm_resource_group.example.name
 
@@ -29,7 +29,7 @@ resource "azurerm_network_interface" "example" {
 }
 
 resource "azurerm_linux_virtual_machine" "example" {
-  name                = var.vm-name
+  name                = var.vmname
   resource_group_name = data.azurerm_resource_group.example.name
   location            = data.azurerm_resource_group.example.location
   size                = "Standard_D2s_v3 - 2 vcpus"

@@ -1,13 +1,13 @@
-variable "subscription-id" {
+variable "subscription_id" {
   type        = string
 }
-variable "client-id" {
+variable "client_id" {
   type        = string
 }
-variable "tenant-id" {
+variable "tenant_id" {
   type        = string
 }
-variable "client-secret" {
+variable "client_secret" {
   type        = string
   sensitive   = true
 }
@@ -15,23 +15,23 @@ variable "client-secret" {
 variable "storage_account_name" {
 
 }
-variable "container-name" {
+variable "container_name" {
 
 }
-variable "resource_group-name" {
+variable "resource_group_name" {
 
 }
 
-variable "virtual_network-name" {
+variable "virtual_networkname" {
   default = "My-vent1"
 }
-variable "subnet-name" {
+variable "subnetname" {
   default = "subnet1"
 }
 
-variable "nic-name" {
+variable "nicname" {
   default = "vm1-nic"
 }
-variable "vm-name" {
+variable "vmname" {
   default = "vm1"
 }
