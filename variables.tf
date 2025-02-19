@@ -1,15 +1,15 @@
 variable "subscription_id" {
-  type        = string
+  type = string
 }
 variable "client_id" {
-  type        = string
+  type = string
 }
 variable "tenant_id" {
-  type        = string
+  type = string
 }
 variable "client_secret" {
-  type        = string
-  sensitive   = true
+  type      = string
+  sensitive = true
 }
 
 variable "storage_account_name" {
@@ -36,7 +36,7 @@ variable "vmname" {
   default = "vm1"
 }
 variable "vm_pass" {
-  type = string
+  type      = string
   sensitive = true
-  
+
 }
